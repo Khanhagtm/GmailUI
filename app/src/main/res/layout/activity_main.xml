@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linear_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000">
+
+        <!-- Navigate Icon -->
+        <ImageView
+            android:id="@+id/navigate_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigate_icon"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp" />
+
+        <!-- Inbox Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/navigate_icon"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/navigate_icon"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Inbox"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp" />
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp" />
+
+    </RelativeLayout>
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scroll_linear_layout">
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
